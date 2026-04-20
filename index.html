@@ -1,1 +1,148 @@
-TEST
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KAZE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "inverse-on-surface": "#eaf1ff",
+                "secondary": "#515f74",
+                "tertiary-container": "#2b1701",
+                "inverse-primary": "#b9c7e4",
+                "surface-container-high": "#dce9ff",
+                "on-tertiary-fixed": "#2b1701",
+                "on-secondary-fixed-variant": "#3a485b",
+                "on-secondary": "#ffffff",
+                "on-error-container": "#93000a",
+                "on-surface-variant": "#44474d",
+                "primary-fixed-dim": "#b9c7e4",
+                "surface-container-low": "#eff4ff",
+                "tertiary-fixed": "#ffdcbd",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#f8f9ff",
+                "on-secondary-container": "#57657a",
+                "surface-bright": "#f8f9ff",
+                "secondary-fixed": "#d5e3fc",
+                "tertiary-fixed-dim": "#e7bf99",
+                "tertiary": "#000000",
+                "secondary-fixed-dim": "#b9c7df",
+                "on-primary-fixed": "#0d1c32",
+                "primary-fixed": "#d6e3ff",
+                "on-secondary-fixed": "#0d1c2e",
+                "error": "#ba1a1a",
+                "on-background": "#0b1c30",
+                "on-tertiary-container": "#9f7d5b",
+                "on-primary-container": "#76849f",
+                "on-surface": "#0b1c30",
+                "on-error": "#ffffff",
+                "surface-container": "#e5eeff",
+                "on-tertiary": "#ffffff",
+                "background": "#f8f9ff",
+                "surface-dim": "#cbdbf5",
+                "on-primary-fixed-variant": "#39475f",
+                "on-primary": "#ffffff",
+                "outline": "#75777e",
+                "inverse-surface": "#213145",
+                "secondary-container": "#d5e3fc",
+                "outline-variant": "#c5c6cd",
+                "surface-container-highest": "#d3e4fe",
+                "primary": "#000000",
+                "surface-variant": "#d3e4fe",
+                "error-container": "#ffdad6",
+                "primary-container": "#0d1c32",
+                "surface-tint": "#515f78",
+                "on-tertiary-fixed-variant": "#5d4124"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(248, 249, 255, 0.8);
+        backdrop-filter: blur(24px);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_32px_64px_-4px_rgba(11,28,48,0.06)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto font-headline tracking-tight">
+<div class="text-2xl font-extrabold tracking-tighter text-slate-900">KAZE</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-slate-900 font-bold border-b-2 border-slate-900 pb-1" href="#hero">FeedSift</a>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-40 pb-48 px-8 max-w-7xl mx-auto min-h-[80vh] flex items-center" id="hero">
+<div class="grid lg:grid-cols-12 gap-16 items-center w-full">
+<div class="lg:col-span-7">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-8">
+                        NEW
+                    </span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold text-primary-container leading-[1.1] mb-8 tracking-tighter">
+                        必要な記事だけ<br/>自動抽出
+                    </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-xl font-light leading-relaxed mb-12">
+  登録したRSS/Atomフィードから、指定キーワードに一致した記事だけを抽出して保存。<br/>
+  未読管理やウィジェット表示で、必要な情報を効率よく確認できます。
+                    </p>
+<div class="flex flex-wrap gap-6">
+<button onclick="location.href='https://apps.apple.com/jp/app/feedsift/id6762340026'" class="bg-primary-container text-on-primary px-10 py-5 rounded-lg font-bold shadow-2xl hover:bg-opacity-90 transition-all">
+ストアへ移動
+</button>
+<button onclick="location.href='https://forms.gle/xx58vS75hCs2N8fZ9'" class="flex items-center gap-3 px-8 py-5 rounded-lg border border-outline-variant/20 font-bold hover:bg-surface-container-low transition-all">
+問い合わせ
+</button>
+<button onclick="location.href='https://forms.gle/mdKPbccaQE4mP13X9'" class="flex items-center gap-3 px-8 py-5 rounded-lg border border-outline-variant/20 font-bold hover:bg-surface-container-low transition-all">
+SUPPORT
+</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden relative shadow-2xl">
+<img class="object-cover w-full h-full opacity-90" data-alt="minimalist abstract digital interface with layered glass elements and soft blue and charcoal lighting reflecting structural precision" src="screenshot.006.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container/20 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 w-full py-16">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8 font-label text-sm uppercase tracking-widest">
+<div class="text-lg font-bold text-slate-900">KAZE</div>
+<div class="flex gap-12 text-slate-400">
+<a class="hover:text-slate-900 transition-colors" href="https://kaze-main.github.io/privacy/FeedSift/term-en.html">Privacy Policy</a>
+<a class="hover:text-slate-900 transition-colors" href="mailto:contact@kaze-lab.net">Contact</a>
+</div>
+<div class="text-slate-400 text-xs">
+                © 2026 KAZE
+            </div>
+</div>
+</footer>
+</body></html>
